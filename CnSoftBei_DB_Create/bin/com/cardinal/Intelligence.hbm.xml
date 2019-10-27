@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.cardinal">
+<class name="Intelligence" table="intelligence">
+        <id name="iId" column="iId">
+            <generator class="native"/>
+        </id>
+        <property name="iTitle" column="iTitle"/>
+        <property name="iAbs" column="iAbs"/>
+        <property name="iUrl" column="iUrl"/>
+        <property name="iDate" column="iDate"/>
+        <property name="iExpertName" column="iExpert_name"/>
+        <property name="iExpertOrg" column="iExpert_org"/>
+</class>
+</hibernate-mapping>

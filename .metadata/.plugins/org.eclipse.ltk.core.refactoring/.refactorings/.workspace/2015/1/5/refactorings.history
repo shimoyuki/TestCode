@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="删除资源“JDeC”" deleteContents="false" description="删除资源“JDeC”" element1="/JDeC" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1422344345521"/>&#x0A;<refactoring comment="删除资源“JDeC”" deleteContents="true" description="删除资源“JDeC”" element1="/JDeC" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1422344821493"/>
+</session>

@@ -1,0 +1,94 @@
+
+					
+				  Jdec : java decompiler
+				  Licenced Under: GPL 
+				  Readme File
+
+
+Jdec: Java Decompiler
+Project Home Site: http://sourceforge.net/projects/jdec
+
+This tool has been written in Core Java and Java Swing For The UI part.
+This code is distributed under the GNU GENERAL PUBLIC LICENSE(GPL, see www.gnu.org).  
+See the file "COPYING" for details.
+
+Getting Started
+---------------
+Please See Install File For More Details
+
+
+
+How Do I Run JDec
+---------------
+Double click on the .bat(Jdec-UI.bat) file in the unzipped folder to lanch jdec
+Or run the .sh file after setting the appropriate permission in unix/linux system.
+
+
+
+
+
+General Note on Decompiler:
+-------------------------
+
+A decompiler's role as the user is familiar with is only concerned with
+is only responsible for reading the bytecodes produced the compiler.
+As there are different interpretaions for the same piece of java code
+it is  not always possible to reverse the bytecode to produce the
+exact java file from which .class file was produced.
+
+
+
+
+
+
+Features of Jdec
+----------------
+
+1> Decompile Classes
+2> Decompile Inner Classes
+3> Decompile Jars
+4> Show Constant Pool
+5> Show LocalVariables if class has been compiled with -g
+6> Show ExceptionTable Details
+7> General Class Details like version number and other small details.
+8> Basic Editor Features.
+9> Useful utilities like compiling and running java files.
+10> Syntax Highlighting for decompiled code.
+11> Decompiler Filter options
+
+
+
+
+Known Bugs Or limitations
+-------------------------
+
+1> Ternary operations are not supported fully.
+
+2>Right Now Annonymous Inner classes are not inlined.
+Jdec can decompile inner classes to any depth , BUT
+it does NOT inline the class in this release. Intention
+is to make it work soon.
+
+
+[NOTE] There may be other bug in this release. Please feel
+free to report any bug. It will be helpful if the user
+can upload the .class File also.
+
+
+
+Bug Parade
+----------
+	Please report the bugs in the bugs report page present in sourceforge site
+	at http://sourceforge.net/projects/jdec
+	
+	[NOTE: It is helpful if the .class file can be uploaded for
+	which the bug was reported]
+	
+
+
+
+
+
+
+
+

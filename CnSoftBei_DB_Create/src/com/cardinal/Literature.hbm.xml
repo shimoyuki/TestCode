@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.cardinal">
+<class name="Literature" table="literature">
+        <id name="lId" column="lId">
+            <generator class="native"/>
+        </id>
+        <property name="lTitle" column="lTitle"/>
+        <property name="lAbs" column="lAbs"/>
+        <property name="lAuthorCn" column="lAuthor_cn"/>
+        <property name="lUnit" column="lUnit"/>
+        <property name="lJournalCn" column="lJournal_cn"/>
+        <property name="lAppDate" column="lApp_date"/>
+        <property name="lKey" column="lKey"/>
+        <property name="lExpertName" column="lExpert_name"/>
+        <property name="lExpertOrg" column="lExpert_org"/>
+</class>
+</hibernate-mapping>

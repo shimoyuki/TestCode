@@ -1,0 +1,80 @@
+/****************************************************************
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS HEADER.     *
+ *                                                              *
+ * Copyright 2009 Jun Li( The SOFTWARE ENGINEERING COLLEGE OF   *
+ * SiChuan University). All rights reserved.                    *
+ *                                                              *
+ * Licensed to the JMS under one  or more contributor license   *
+ * agreements.  See the LICENCE file  distributed with this     *
+ * work for additional information regarding copyright          *
+ * ownership.  The JMS licenses this file  you may not use this *
+ * file except in compliance  with the License.                 *
+ *                                                              *
+ * Unless required by applicable law or agreed to in writing,   *
+ * software distributed under the License is distributed on an  *
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY       *
+ * KIND, either express or implied.  See the License for the    *
+ * specific language governing permissions and limitations      *
+ * under the License.                                           *
+ ****************************************************************/
+package org.jpxx.mail.user;
+
+import org.jpxx.mail.util.EmailAddress;
+
+/**
+ * 
+ * 
+ * @author Jun Li
+ * @version $Revision: 0.0.3 $, $Date: 2008/10/27 $
+ * 
+ * @since version 0.0.3
+ * 
+ */
+public abstract class AbstractMailUserHandler implements MailUserHandler {
+
+    /**
+     * @see org.jpxx.mail.user.MailUserHandler#check(EmailAddress emailAddress,
+     *      String password)
+     */
+    public boolean check(EmailAddress emailAddress, String password) {
+        return check(emailAddress, password, null);
+    }
+
+    /**
+     * @see org.jpxx.mail.user.MailUserHandler#addUser(User user)
+     */
+    public boolean addUser(User user) {
+        String domain = user.getDomain();
+
+        if (domain == null || domain.equals("")) {
+            return addUser(user.getUserName(), user.getPassword());
+        } else {
+            return addUser(user.getUserName(), user.getPassword(), domain);
+        }
+    }
+
+    public abstract boolean addUser(String userName, String password);
+
+    public abstract boolean addUser(String userName, String password, String domain);
+
+    public boolean modifyUser(User user) {
+        String domain = user.getDomain();
+
+        if (domain == null || domain.equals("")) {
+            return modifyUser(user.getUserName(), user.getPassword());
+        } else {
+            return modifyUser(user.getUserName(), user.getPassword(), domain);
+        }
+    }
+
+    public abstract boolean modifyUser(String userName, String password);
+
+    public abstract boolean modifyUser(String userName, String password, String domain);
+
+    /**
+     * @see MailUserHandler#deleteUser(org.jpxx.mail.Util.EmailAddress)
+     */
+    public boolean deleteUser(EmailAddress emailAddress) {
+        return this.deleteUser(emailAddress.getUserName(), emailAddress.getDomain());
+    }
+}

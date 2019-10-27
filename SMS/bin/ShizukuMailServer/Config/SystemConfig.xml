@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConfigList>
+        <Config>
+                <key>Pop3Port</key>
+                <value><![CDATA[110]]></value>
+        </Config>
+        <Config>
+                <key>SmtpPort</key>
+                <value><![CDATA[25]]></value>
+        </Config>
+        <Config>
+                <key>Memory</key>
+                <value><![CDATA[db]]></value>
+        </Config>
+        <Config>
+                <key>DbUrl</key>
+                <value><![CDATA[jdbc:mysql://localhost:3306/SMS]]></value>
+        </Config>
+        <Config>
+                <key>DbUser</key>
+                <value><![CDATA[root]]></value>
+        </Config>
+        <Config>
+                <key>DbPwd</key>
+                <value><![CDATA[kagari8243]]></value>
+        </Config>
+        <Config>
+                <key>Domain</key>
+                <value><![CDATA[shizuku.com]]></value>
+        </Config>
+        <Config>
+                <key>SystemReplyMail</key>
+                <value><![CDATA[postmaster@shizuku.com]]></value>
+        </Config>
+</ConfigList>
+

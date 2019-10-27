@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.cardinal">
+<class name="Patent" table="patent">
+        <id name="pId" column="pId">
+            <generator class="native"/>
+        </id>
+        <property name="pTitle" column="pTitle"/>
+        <property name="pDate" column="pDate"/>
+        <property name="pAbs" column="pAbs"/>
+        <property name="pApplicant" column="pApplicant"/>
+        <property name="pInventor" column="pInventor"/>
+        <property name="pExpertName" column="pExpert_name"/>
+        <property name="pExpertOrg" column="pExpert_org"/>
+        <property name="pPatentAgency" column="pPatent_agency"/>
+</class>
+</hibernate-mapping>

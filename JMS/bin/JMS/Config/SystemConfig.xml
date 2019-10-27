@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConfigList>
+        <Config>
+                <key>Domain</key>
+                <value><![CDATA[127.0.0.1]]></value>
+        </Config>
+        <Config>
+                <key>Pop3Port</key>
+                <value><![CDATA[110]]></value>
+        </Config>
+        <Config>
+                <key>SmtpPort</key>
+                <value><![CDATA[25]]></value>
+        </Config>
+        <Config>
+                <key>SystemReplyMail</key>
+                <value><![CDATA[postmaster@127.0.0.1]]></value>
+        </Config>
+</ConfigList>
+

@@ -1,0 +1,61 @@
+package com.jianqiu.search;
+import static java.lang.System.out;
+
+import com.jianqiu.sort.*
+;
+public class TernarySearch {
+
+	private float arr[];
+	TernarySearch(int n,int k){
+		int i = 0;
+		this.arr = new float[n];
+		for(i = 0; i < n; i ++)
+			this.arr[i] = k * i + 1;
+	}
+	
+	TernarySearch(float arr[]){
+		this.arr = new float[arr.length];
+		for(int i = 0; i <  arr.length; i ++)
+			this.arr[i] = arr[i];
+	}
+	
+	public void show(){
+		for(int i = 0; i < this.arr.length; i ++)
+			out.print(this.arr[i] + " ");
+		out.println();
+	}
+	
+	private int tSearch(float elem){
+		int low = 1,high = this.arr.length,mid = 0,x=-1;
+		while(low <= high && x == -1){
+			mid =low +  (low + high) / 3;
+			if(elem == this.arr[mid-1]){
+				x = mid;
+			}
+			
+			else if(elem < this.arr[mid - 1]){
+				high = mid - 1;
+			}
+			else{
+				low = mid + 1;
+			}
+		}
+		return x;
+	}
+	public static void main(String[] args) {
+		float[] arr = {6,13,7,3,4,0,5,2,9,15,11,8,16,10,12,1,14};
+		InsertSort is = new InsertSort(arr);
+		is.isort();
+		TernarySearch ts = new TernarySearch(is.getArr());
+		ts.show();
+		
+		TernarySearch ts2= new TernarySearch(10,3);
+		ts2.show();
+		
+		for(float e = -1; e < 18; e ++){
+			ts.tSearch(e);
+			ts.show();
+		}
+	}
+
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/TakeoutServer/WEB-INF/lib/mysql-connector-java-3.1.12-bin.jar"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.mysql.jdbc.DocsConnectionPropsHelper"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="TakeoutServer"/>
+</launchConfiguration>

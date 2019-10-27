@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="将方法“public static void test()”从“com.cardinal.TestJar.main()”抽取到“com.cardinal.TestJar”&#x0D;&#x0A;－ 原始项目：“TestJar”&#x0D;&#x0A;－ 方法名称：“test”&#x0D;&#x0A;－ 目标类型：“com.cardinal.TestJar”&#x0D;&#x0A;－ 已声明可视性：“public”" comments="false" description="抽取方法“test”" destination="0" exceptions="false" flags="786434" id="org.eclipse.jdt.ui.extract.method" input="/src&lt;com.cardinal{TestJar.java" name="test" replace="false" selection="773 790" stamp="1460722134469" version="1.0" visibility="1"/>
+</session>

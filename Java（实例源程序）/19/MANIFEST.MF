@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Main-Class: com.lzw.Main
+Class-Path: . lib/sqljdbc.jar
+Image-Path: . 
